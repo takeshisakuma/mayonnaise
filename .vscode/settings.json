@@ -1,0 +1,195 @@
+{
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe", // インデントのガイドの表示
+  "editor.renderLineHighlight": "all", // 選択行のハイライト
+  "editor.renderWhitespace": "all", // 半角スペースの表示
+  "editor.snippetSuggestions": "top", // スニペット候補の表示（Emmet）
+  "editor.tabSize": 2, // タブのサイズ変更
+  "editor.wordWrap": "off", // エディターの幅で折り返し
+  "emmet.showSuggestionsAsSnippets": true, // Emmet の候補を表示
+  "emmet.triggerExpansionOnTab": true, // TAB キーで Emmet を展開
+  "emmet.variables": {
+    // Emmet で展開される言語を変更
+    "lang": "ja"
+  },
+  "explorer.confirmDelete": false, // ファイル削除時の確認を表示しない
+  "files.associations": {
+    // ファイルと言語の関連付けを変更
+    ".*lintrc": "json",
+    "*.js": "javascriptreact"
+  },
+
+  "files.exclude": {
+    // エクスプローラーから非表示にするファイル
+    "**/*.map": true,
+    "**/node_modules": true
+  },
+  "files.insertFinalNewline": true, // ファイルの保存時に末尾を改行
+  "files.trimFinalNewlines": true, // ファイルの保存時に最終行以降をトリミング
+  "files.trimTrailingWhitespace": true, // ファイルの保存時に行末の空白をトリミング
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Markdown のファイルは行末の空白をトリミングしない
+  },
+  "html.format.contentUnformatted": "pre, code, textarea, title, h1, h2, h3, h4, h5, h6, p", // タグ内の記述はフォーマットしない
+  "html.format.extraLiners": "", // head, body, /html タグの前に改行を入れない
+  "html.format.unformatted": null, // フレージング・コンテンツ（旧インライン要素のようなタグ）はフォーマットしない
+  "html.format.wrapLineLength": 0, // 行の文字数制限を無くし自動で改行させない
+  "search.exclude": {
+    // 検索対象外にするファイル設定（ files.exclude のファイルも含む）
+    "**/tmp": true
+  },
+  "window.openFoldersInNewWindow": "on", // 新規ワークスペースを別ウインドウで開く
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}", // ウインドウ上部に表示する文字列の設定
+  "workbench.editor.labelFormat": "short", // タブに表示する文字列の設定
+  "workbench.editor.tabSizing": "shrink", // タブの表示設定
+  "workbench.startupEditor": "none", // Welcome Page を表示しない
+  "editor.insertSpaces": true,
+  "explorer.confirmDragAndDrop": false,
+  // HTML タグの自動クローズを有効/無効にします。
+  "html.autoClosingTags": false,
+  "workbench.editor.enablePreview": false,
+  "editor.formatOnSave": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "php-cs-fixer.lastDownload": 1693229696292,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.debug": true,
+  "eslint.lintTask.enable": true,
+  "eslint.format.enable": true,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.options": {},
+  "javascript.format.enable": false,
+  "stylelint.autoFixOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "php.executablePath": "",
+  "intelephense.diagnostics.undefinedFunctions": false,
+  "liveServer.settings.proxy": {
+    "enable": false,
+    "baseUri": "/",
+    "proxyUri": "http://localhost/"
+  },
+  "liveServer.settings.useWebExt": true,
+  "markdown.marp.themes": ["./marp-themes/test.css"],
+  "git.autofetch": true,
+  "BracketSameLine": true,
+  "prettier.jsxSingleQuote": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "intelephense.diagnostics.undefinedMethods": false,
+  "intelephense.stubs": [
+    "apache",
+    "bcmath",
+    "bz2",
+    "calendar",
+    "com_dotnet",
+    "Core",
+    "ctype",
+    "curl",
+    "date",
+    "dba",
+    "dom",
+    "enchant",
+    "exif",
+    "FFI",
+    "fileinfo",
+    "filter",
+    "fpm",
+    "ftp",
+    "gd",
+    "gettext",
+    "gmp",
+    "hash",
+    "iconv",
+    "imap",
+    "intl",
+    "json",
+    "ldap",
+    "libxml",
+    "mbstring",
+    "meta",
+    "mysqli",
+    "oci8",
+    "odbc",
+    "openssl",
+    "pcntl",
+    "pcre",
+    "PDO",
+    "pdo_ibm",
+    "pdo_mysql",
+    "pdo_pgsql",
+    "pdo_sqlite",
+    "pgsql",
+    "Phar",
+    "posix",
+    "pspell",
+    "readline",
+    "Reflection",
+    "session",
+    "shmop",
+    "SimpleXML",
+    "snmp",
+    "soap",
+    "sockets",
+    "sodium",
+    "SPL",
+    "sqlite3",
+    "standard",
+    "superglobals",
+    "sysvmsg",
+    "sysvsem",
+    "sysvshm",
+    "tidy",
+    "tokenizer",
+    "xml",
+    "xmlreader",
+    "xmlrpc",
+    "xmlwriter",
+    "xsl",
+    "Zend OPcache",
+    "zip",
+    "zlib",
+    "wordpress"
+  ],
+  "vscode-w3cvalidation.validator-token": "Fri, 25 Jun 2021 22:00:00 GMT",
+  "terminal.integrated.tabs.enabled": true,
+  "intelephense.format.braces": "k&r",
+  "redhat.telemetry.enabled": true,
+  "editor.guides.indentation": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "Consolas, 'Courier New', monospace,メイリオ",
+  "editor.lineNumbers": "on",
+  "files.autoSave": "afterDelay",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "workbench.colorTheme": "Illusion",
+  "powermode.enabled": true,
+  "textlint.languages": [],
+  "editor.inlayHints.enabled": "off",
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#9fced11f"
+  },
+  "diffEditor.wordWrap": "off",
+  "editor.guides.bracketPairs": false,
+  "window.commandCenter": true,
+  "window.zoomLevel": 3
+}
